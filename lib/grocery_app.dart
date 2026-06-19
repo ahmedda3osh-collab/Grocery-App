@@ -1,7 +1,8 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:grocery/features/screen/sign_up_Screen.dart' show SignUpScreen;
+import 'package:grocery/screens/on%20bording/on_bording.dart';
+import 'package:grocery/screens/signup/sign_up_Screen.dart';
 
 class GroceryApp extends StatelessWidget {
   const GroceryApp({super.key});
