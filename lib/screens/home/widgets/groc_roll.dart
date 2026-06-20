@@ -10,28 +10,23 @@ class GrocRoll extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return 
-    Row(
+    SingleChildScrollView(
+    scrollDirection: Axis.horizontal,
+    child: Row(
       children: [
-                    SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: [
-                          
-                       GroceriesContainer(
-                        color: "0xFFF8A44C",
-                        title: "Pulses",
-                        imagePath: "assets/images/Pulses.png",
-                      ),
-                      SizedBox(width: 15,),
-                      GroceriesContainer(
-                        color: "0xFFEAF4E8",
-                        title: "Rice",
-                        imagePath: "assets/images/rich.png",
-                      ),
-                      ],
-                     ),
-                    ),
-                  ],
-    );
-  }
+        GroceriesContainer(
+          color: "0xFFF8A44C",
+          title: "Pulses",
+          imagePath: "assets/images/Pulses.png",
+        ),
+        const SizedBox(width: 15),
+        GroceriesContainer(
+          color: "0xFFFEAF4E8",
+          title: "Rice",
+          imagePath: "assets/images/rich.png", 
+        ),
+      ],
+    ),
+  );
+}
 }

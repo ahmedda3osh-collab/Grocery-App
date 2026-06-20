@@ -8,7 +8,6 @@ import 'package:grocery/screens/home/widgets/exclusive_list_view.dart';
 import 'package:grocery/screens/home/widgets/first_header.dart';
 import 'package:grocery/screens/home/widgets/first_photo.dart';
 import 'package:grocery/screens/home/widgets/groc_roll.dart';
-import 'package:grocery/screens/home/widgets/groceries_contanier.dart';
 import 'package:grocery/screens/home/widgets/last_roll.dart';
 import 'package:grocery/screens/home/widgets/search_field.dart';
 import 'package:grocery/screens/home/widgets/single_child_scroll.dart';
@@ -41,10 +40,9 @@ class HomeScreen extends StatelessWidget {
                 GrocRoll(),
                 SizedBox(height: 20,),
                 LastRoll()
-                
-              ],
+                ],
             ),
-                      ),
+          ),
         ),
       ),
       bottomNavigationBar: BottomNavBar(),
